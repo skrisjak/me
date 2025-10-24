@@ -1,5 +1,8 @@
 import {useEffect, useState} from "react";
 import {getBio, getEducation, getProjects, getTechnologies, getWorkHistory} from "@/utils/DataExtractor";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
 
 export default function Home() {
     const [graph, setGraph] = useState(null);
@@ -13,7 +16,8 @@ export default function Home() {
 
     useEffect(() => {
         const fetchGraph = async () => {
-            fetch("/cv.jsonld").then(res => res.json()).then((json) => {setGraph(json)});
+            const basePath = publicRuntimeConfig.basePath || "";
+            fetch(basePath + "/cv.jsonld").then(res => res.json()).then((json) => {setGraph(json)});
         }
         fetchGraph();
     }, []);
