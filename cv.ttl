@@ -1,0 +1,120 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix cv: <http://rdfs.org/resume-rdf/#term_> .
+@base  <http://skrisjak./>.
+
+
+<> a foaf:Person, schema:Person, cv:CV, cv:Person;
+    foaf:firstName "Jakub";
+    foaf:familyName "Skříšovský";
+    foaf:birthday "06.11.2002";
+     schema:address "České Budějovice";
+   schema:telephone "+420 773 587 214";
+   schema:email "jskrisovsky06@gmail.com";
+     cv:hasWorkHistory <https://www.beachparkcb.cz/>;
+    foaf:img <https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/31775109_2026374270912792_4361134574319697920_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xqmR1w1t2eMQ7kNvwGpk_H2&_nc_oc=Adl0j283YLogt4mFoU2nHhHzxMOHT2LYDEJQF26h22D4MywlMXDG4hvB6ambFTeIfXk&_nc_zt=23&_nc_ht=scontent-prg1-1.xx&_nc_gid=6cn01EsfD1pbe11uwMnH_g&oh=00_Afc6DB0obsLlTGXtGRKTNIXDWveS_Ib2xF3NOI73V138Qw&oe=69173A33> ;
+     schema:skills <https://www.java.com/en/>,
+                   <https://spring.io/>,
+                 <https://react.dev/>,
+                   <https://git-scm.com/>,
+                   <https://www.linux.org/>,
+                   <https://www.w3.org/RDF/>,
+                   <https://camunda.com/> ,
+                   <https://www.postgresql.org/>;
+     cv:hasSkill <https://www.java.com/en/>,
+                 <https://spring.io/>,
+                 <https://react.dev/>,
+                 <https://git-scm.com/> ,
+                 <https://www.linux.org/>,
+                 <https://www.w3.org/RDF/>,
+                 <https://camunda.com/> ,
+                 <https://www.postgresql.org/>;
+    schema:alumniOf
+           #<https://www.gymceska.cz/>,
+           <https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> ;
+    cv:hasEducation
+           #<https://www.gymceska.cz/>,
+           <https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> .
+
+<https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> a schema:SoftwareSourceCode, schema:Project ;
+    schema:codeRepository <https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> ;
+    schema:name "Ontology metrics" ;
+    schema:abstract "Nástroj k výpočtu metrik sémantických modelů webových ontologií" , "Projekt k bakalářské práci" ;
+    schema:workFeatured [ a schema:Article;
+                          schema:name "SemDev 2025";
+                          schema:url <https://openreview.net/forum?id=7IsSW2mP6o&referrer=%5Bthe%20profile%20of%20Petr%20K%C5%99emen%5D(%2Fprofile%3Fid%3D~Petr_K%C5%99emen1)>
+                        ] ,
+                        [ a schema:Thesis;
+    schema:name "Bakalářská práce";
+    schema:url <https://dspace.cvut.cz/handle/10467/122781>
+]
+.
+
+<https://github.com/skrisjak/crew-planner> a schema:SoftwareSourceCode, schema:Project ;
+    schema:codeRepository <https://github.com/skrisjak/crew-planner>;
+    schema:name "Crew Planner" ;
+    schema:abstract "Sdílený kalendář založený na Google OAuth pro plánování směn" .
+
+<https://github.com/tobias-le/hr-app> a schema:SoftwareSourceCode, schema:Project ;
+    schema:codeRepository <https://github.com/tobias-le/hr-app> ;
+                                      schema:name "HR App" ;
+                                      schema:abstract "Skupinový projekt v rámci předmětu Project Management - práce na FE i BE" .
+
+
+#<https://www.gymceska.cz/> a schema:HighSchool, cv:Education ;
+#                           schema:name "Gymnázium Česká 64 v Českých Budějovicích";
+#                           schema:location "České Budějovice" ;
+#                          cv:eduDescription "osmileté všeobecné gymnázium" .
+
+<https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> a schema:EducationalOrganization, cv:Education ;
+    schema:name "Softwarové inženýrství a technologie na fakultě elektrotechnické v Praze";
+                                                                                                                       cv:eduDescription "během studia absolvované předměty jako: algoritmizace, tvorba webových aplikací, databázové systémy, notace UML a BPMN, objektový návrh a modelování, návrh softwarových systémů, distribuované systémy a výpočty", "bakalářské studium se specializací Enterprise systémy" ;
+    schema:parentOrganization <https://cvut.cz/> .
+
+<https://www.cvut.cz/> a schema:CollegeOrUniversity ;
+    schema:name "ČVUT";
+    schema:location "Praha" .
+
+<https://www.beachparkcb.cz/> a cv:CV_Entry, cv:WorkHistory ;
+      schema:name "BeachPark CB" ;
+      cv:jobDescription "Sezonní práce jako obsluha baru/pizzerie, vedoucí směny" .
+
+<https://www.java.com/en/> a schema:ComputerLanguage, cv:Skill ;
+       schema:name "Java";
+       cv:skillName "Java" ;
+       schema:image <https://banner2.cleanpng.com/20180502/ksq/avdsf7rin.webp>.
+
+<https://spring.io/> a schema:ComputerLanguage, cv:Skill ;
+             schema:name "Spring" ;
+             cv:skillName "Spring" ;
+             schema:image <https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp> .
+
+<https://react.dev/> a schema:ComputerLanguage, cv:Skill;
+        schema:name "React JS" ;
+        cv:skillName "React JS" ;
+        schema:image <https://banner2.cleanpng.com/20180604/pol/aa9o0qy6e.webp> .
+
+<https://git-scm.com/> a cv:Skill ;
+      schema:name "Git" ;
+      cv:skillName "Git" ;
+      schema:image <https://banner2.cleanpng.com/20180824/xrj/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-1713949426611.webp> .
+
+<https://www.linux.org/> a cv:Skill;
+        schema:name "Síťové služby v Linux" ;
+        cv:skillName "Síťové služby v Linux" ;
+        schema:image <https://banner2.cleanpng.com/20240217/alw/transparent-linux-logo-black-penguin-standing-with-open-beak-1710875197183.webp> .
+
+<https://www.w3.org/RDF/> a schema:ComputerLanguage, cv:Skill ;
+       schema:name "Semantic Web" ;
+       cv:skillName "Semantic Web" ;
+               schema:image <https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8U7AGVOvLM-YbLe8fGD8cfqXmXQSY7umTQ&s> .
+
+<https://camunda.com/> a schema:ComputerLanguage, cv:Skill ;
+          schema:name "Camunda" ;
+          cv:skillName "Camunda";
+          schema:image <https://media2.dev.to/dynamic/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F4009%2F5f19c07c-1c70-4bb2-9d51-dc8f742d6eb7.png> .
+
+<https://www.postgresql.org/> a cv:Skill ;
+    schema:name "PostgreSQL" ;
+    cv:skillName "PostgreSQL" ;
+    schema:image <https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp> .
