@@ -1,0 +1,46 @@
+name: Build & Deploy Next.js with Jena conversion
+
+on:
+  push:
+    branches: -main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🧠 Install Apache Jena
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk wget unzip
+          wget https://dlcdn.apache.org/jena/binaries/apache-jena-5.0.0.zip
+          unzip apache-jena-5.0.0.zip
+          echo "$PWD/apache-jena-5.0.0/bin" >> $GITHUB_PATH
+
+      - name: 🔄 Convert ontology to JSON-LD
+        run: |
+          jena/bin/riot --output=jsonld public/cv.ttl > public/cv.jsonld
+
+      - name: 🏗️ Build Next.js site
+        run: |
+          npm run build
+          npm run export
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./out
