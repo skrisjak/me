@@ -1,0 +1,268 @@
+{
+    "@graph": [
+        {
+            "@id": "https://www.postgresql.org/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "PostgreSQL",
+            "schema:name": "PostgreSQL",
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
+        },
+        {
+            "@id": "https://camunda.com/",
+            "schema:image": {
+                "@id": "https://media2.dev.to/dynamic/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F4009%2F5f19c07c-1c70-4bb2-9d51-dc8f742d6eb7.png"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Camunda",
+            "schema:name": "Camunda",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Skill",
+                "schema:ComputerLanguage"
+            ]
+        },
+        {
+            "@id": "https://www.w3.org/RDF/",
+            "schema:image": {
+                "@id": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8U7AGVOvLM-YbLe8fGD8cfqXmXQSY7umTQ&s"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Semantic Web",
+            "schema:name": "Semantic Web",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Skill",
+                "schema:ComputerLanguage"
+            ]
+        },
+        {
+            "@id": "https://www.linux.org/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/20240217/alw/transparent-linux-logo-black-penguin-standing-with-open-beak-1710875197183.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Síťové služby v Linux",
+            "schema:name": "Síťové služby v Linux",
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
+        },
+        {
+            "@id": "https://git-scm.com/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/20180824/xrj/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-1713949426611.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Git",
+            "schema:name": "Git",
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
+        },
+        {
+            "@id": "https://react.dev/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/20180604/pol/aa9o0qy6e.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "React JS",
+            "schema:name": "React JS",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Skill",
+                "schema:ComputerLanguage"
+            ]
+        },
+        {
+            "@id": "https://spring.io/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Spring",
+            "schema:name": "Spring",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Skill",
+                "schema:ComputerLanguage"
+            ]
+        },
+        {
+            "@id": "https://www.java.com/en/",
+            "schema:image": {
+                "@id": "https://banner2.cleanpng.com/20180502/ksq/avdsf7rin.webp"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Java",
+            "schema:name": "Java",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Skill",
+                "schema:ComputerLanguage"
+            ]
+        },
+        {
+            "@id": "https://www.beachparkcb.cz/",
+            "http://rdfs.org/resume-rdf/#term_jobDescription": "Sezonní práce jako obsluha baru/pizzerie, vedoucí směny",
+            "schema:name": "BeachPark CB",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_WorkHistory",
+                "http://rdfs.org/resume-rdf/#term_CV_Entry"
+            ]
+        },
+        {
+            "@id": "https://www.cvut.cz/",
+            "schema:location": "Praha",
+            "schema:name": "ČVUT",
+            "@type": "schema:CollegeOrUniversity"
+        },
+        {
+            "@id": "https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium",
+            "schema:parentOrganization": {
+                "@id": "https://cvut.cz/"
+            },
+            "http://rdfs.org/resume-rdf/#term_eduDescription": [
+                "bakalářské studium se specializací Enterprise systémy",
+                "během studia absolvované předměty jako: algoritmizace, tvorba webových aplikací, databázové systémy, notace UML a BPMN, objektový návrh a modelování, návrh softwarových systémů, distribuované systémy a výpočty"
+            ],
+            "schema:name": "Softwarové inženýrství a technologie na fakultě elektrotechnické v Praze",
+            "@type": [
+                "http://rdfs.org/resume-rdf/#term_Education",
+                "schema:EducationalOrganization"
+            ]
+        },
+        {
+            "@id": "https://github.com/tobias-le/hr-app",
+            "schema:abstract": "Skupinový projekt v rámci předmětu Project Management - práce na FE i BE",
+            "schema:name": "HR App",
+            "schema:codeRepository": {
+                "@id": "https://github.com/tobias-le/hr-app"
+            },
+            "@type": [
+                "schema:Project",
+                "schema:SoftwareSourceCode"
+            ]
+        },
+        {
+            "@id": "https://github.com/skrisjak/crew-planner",
+            "schema:abstract": "Sdílený kalendář založený na Google OAuth pro plánování směn",
+            "schema:name": "Crew Planner",
+            "schema:codeRepository": {
+                "@id": "https://github.com/skrisjak/crew-planner"
+            },
+            "@type": [
+                "schema:Project",
+                "schema:SoftwareSourceCode"
+            ]
+        },
+        {
+            "@id": "_:b0",
+            "schema:url": {
+                "@id": "https://dspace.cvut.cz/handle/10467/122781"
+            },
+            "schema:name": "Bakalářská práce",
+            "@type": "schema:Thesis"
+        },
+        {
+            "@id": "_:b1",
+            "schema:url": {
+                "@id": "https://openreview.net/forum?id=7IsSW2mP6o&referrer=%5Bthe%20profile%20of%20Petr%20K%C5%99emen%5D(%2Fprofile%3Fid%3D~Petr_K%C5%99emen1)"
+            },
+            "schema:name": "SemDev 2025",
+            "@type": "schema:Article"
+        },
+        {
+            "@id": "https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics",
+            "schema:workFeatured": [
+                {
+                    "@id": "_:b0"
+                },
+                {
+                    "@id": "_:b1"
+                }
+            ],
+            "schema:abstract": [
+                "Projekt k bakalářské práci",
+                "Nástroj k výpočtu metrik sémantických modelů webových ontologií"
+            ],
+            "schema:name": "Ontology metrics",
+            "schema:codeRepository": {
+                "@id": "https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics"
+            },
+            "@type": [
+                "schema:Project",
+                "schema:SoftwareSourceCode"
+            ]
+        },
+        {
+            "@id": "http://skrisjak./",
+            "http://rdfs.org/resume-rdf/#term_hasEducation": {
+                "@id": "https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium"
+            },
+            "schema:alumniOf": {
+                "@id": "https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium"
+            },
+            "http://rdfs.org/resume-rdf/#term_hasSkill": [
+                {
+                    "@id": "https://www.postgresql.org/"
+                },
+                {
+                    "@id": "https://camunda.com/"
+                },
+                {
+                    "@id": "https://www.w3.org/RDF/"
+                },
+                {
+                    "@id": "https://www.linux.org/"
+                },
+                {
+                    "@id": "https://git-scm.com/"
+                },
+                {
+                    "@id": "https://react.dev/"
+                },
+                {
+                    "@id": "https://spring.io/"
+                },
+                {
+                    "@id": "https://www.java.com/en/"
+                }
+            ],
+            "schema:skills": [
+                {
+                    "@id": "https://www.postgresql.org/"
+                },
+                {
+                    "@id": "https://camunda.com/"
+                },
+                {
+                    "@id": "https://www.w3.org/RDF/"
+                },
+                {
+                    "@id": "https://www.linux.org/"
+                },
+                {
+                    "@id": "https://www.java.com/en/"
+                },
+                {
+                    "@id": "https://spring.io/"
+                },
+                {
+                    "@id": "https://react.dev/"
+                },
+                {
+                    "@id": "https://git-scm.com/"
+                }
+            ],
+            "@type": [
+                "foaf:Person",
+                "schema:Person",
+                "http://rdfs.org/resume-rdf/#term_CV",
+                "http://rdfs.org/resume-rdf/#term_Person"
+            ],
+            "foaf:firstName": "Jakub",
+            "foaf:familyName": "Skříšovský",
+            "foaf:birthday": "06.11.2002",
+            "schema:address": "České Budějovice",
+            "schema:telephone": "+420 773 587 214",
+            "schema:email": "jskrisovsky06@gmail.com",
+            "http://rdfs.org/resume-rdf/#term_hasWorkHistory": {
+                "@id": "https://www.beachparkcb.cz/"
+            },
+            "foaf:img": {
+                "@id": "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/31775109_2026374270912792_4361134574319697920_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xqmR1w1t2eMQ7kNvwGpk_H2&_nc_oc=Adl0j283YLogt4mFoU2nHhHzxMOHT2LYDEJQF26h22D4MywlMXDG4hvB6ambFTeIfXk&_nc_zt=23&_nc_ht=scontent-prg1-1.xx&_nc_gid=6cn01EsfD1pbe11uwMnH_g&oh=00_Afc6DB0obsLlTGXtGRKTNIXDWveS_Ib2xF3NOI73V138Qw&oe=69173A33"
+            }
+        }
+    ],
+    "@context": {
+        "schema": "https://schema.org/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "cv": "http://rdfs.org/resume-rdf/#term_"
+    }
+}

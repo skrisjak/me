@@ -1,0 +1,316 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Roboto Flex",Arial, Helvetica, sans-serif;
+  min-height: 100svh;
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
+main {
+    min-height: 100svh;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+body > div {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 10px;
+}
+
+section:nth-of-type(2n) h3 {
+    color: #3a8def;
+}
+
+section:nth-of-type(2n+1) h3 {
+    color: #ea723c;
+}
+
+[typeof~="foaf:Person"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+[typeof~="foaf:Person"] h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 1000;
+    font-family: Outfit, sans-serif;
+}
+
+main > section:nth-of-type(1) {
+    background: #002c45;
+    box-shadow: 4px 0 8px rgba(0,0,0,0.05);
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3a8def;
+    font-family: Outfit, sans-serif;
+}
+
+.divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 3px;
+    background-color: #002c45;
+}
+
+.profileImage {
+    margin-top: 20px;
+    border-radius: 50%;
+    background-image: conic-gradient(#ea723c 0%,#3a8def 99%);
+    animation: spin 10s ease-in-out infinite;
+    aspect-ratio: 1 /1;
+}
+
+.profileImage img {
+    height: 180px;
+    width: 180px;
+    padding: 5px;
+    border-radius: 50%;
+    animation: reverseSpin 10s ease-in-out infinite;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes reverseSpin {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+.skill {
+    border: none;
+}
+
+[typeof~="cv:Skill"] a {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+}
+
+section h4:nth-of-type(2n+1) i {
+    color: #ea723c;
+    font-size: 1.2em;
+}
+
+section h4:nth-of-type(2n) i{
+    color: #3a8def;
+    font-size: 1.2em;
+}
+
+main > section:nth-of-type(1) h4 {
+    font-weight: lighter;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+[typeof~="cv:Education"] h4, [typeof~="cv:WorkHistory"] h4, [typeof~="schema:Project"] h4 {
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.02);
+}
+
+#projectsSlider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projectWindow {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 96%;
+}
+
+#projectsContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: stretch;
+}
+
+#left , #right{
+    align-self: stretch;
+    width: 2%;
+    transition: 0.2s;
+    color: rgba(0 , 0 , 0 , 0);
+}
+
+#left:hover , #right:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+#pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.active {
+    color: black;
+    transition: 0.3s;
+}
+
+#projectWindow::-webkit-scrollbar {
+    display: none;
+}
+
+#projectWindow > div {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    padding: 5px;
+}
+
+h4 {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+h4 img {
+    height: 1.5em;
+    aspect-ratio: auto;
+}
+
+@media screen and (min-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        row-gap: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    main > :nth-child(1) {
+        height: 100%;
+        grid-column: 1;
+        grid-row: 1 / 1000;
+    }
+
+    main > :not(:nth-child(1)) {
+        grid-column: 2;
+        padding: 20px;
+    }
+    .hidden {
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    [typeof~="foaf:Person"] {
+        flex-direction: row;
+    }
+
+    [typeof~="foaf:Person"] h2 {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1ch;
+    }
+
+    .hidden {
+        display: block;
+    }
+}
+
+@media print {
+
+    * {
+        margin: 0 ;
+        padding: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 33% 67%;
+    }
+
+    main > :nth-child(1) {
+        height: 100%;
+        grid-column: 1;
+        grid-row: 1 / 999;
+        background: #002c45;
+    }
+
+    main > :not(:nth-child(1)) {
+        grid-column: 2;
+        padding: 20px;
+    }
+
+    #projectsSlider {
+        display: none !important;
+    }
+
+    #pagination {
+        display: none !important;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #projectWindow {
+        display: block;
+        width: 100%;
+    }
+
+    #projectWindow > div {
+        padding: 0;
+    }
+
+}
