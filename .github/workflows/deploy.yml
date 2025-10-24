@@ -28,10 +28,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y openjdk-17-jdk wget unzip
-          wget https://dlcdn.apache.org/jena/binaries/apache-jena-5.0.0.zip
-          unzip apache-jena-5.0.0.zip
-          echo "$PWD/apache-jena-5.0.0/bin" >> $GITHUB_PATH
-
       - name: 🔄 Convert ontology to JSON-LD
         run: |
           jena/bin/riot --output=jsonld public/cv.ttl > public/cv.jsonld
