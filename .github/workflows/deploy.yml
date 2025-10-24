@@ -2,7 +2,8 @@ name: Build & Deploy Next.js with Jena conversion
 
 on:
   push:
-    branches: -main
+    branches:
+    - main
 
 permissions:
   contents: write
