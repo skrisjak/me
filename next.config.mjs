@@ -8,6 +8,10 @@ const nextConfig = {
         });
         return config;
     },
+    output: 'export',
+    images: { unoptimized: true },
+    basePath: '/me',
+    assetPrefix: '/me/',
 };
 
 export default nextConfig;
