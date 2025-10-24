@@ -139,7 +139,7 @@ export default function Home() {
                 </h3>
                       {education.map((eduEntry => {
                           return (
-                              <div typeof="cv:Education" style={{paddingLeft:"8px", paddingRight:"8px"}}>
+                              <div typeof="cv:Education" style={{paddingLeft:"8px", paddingRight:"8px"}} key={eduEntry["@id"]}>
                                   <h4 property="schema:name">
                                   <a href={eduEntry.link}>
                                       {eduEntry.name}
@@ -147,8 +147,8 @@ export default function Home() {
                                   </h4>
                                   {eduEntry.description &&
                                   <ul>
-                                      {eduEntry.description.map(eduDescription =>
-                                      <li property="cv:eduDescription">
+                                      {eduEntry.description.map((eduDescription, index) =>
+                                      <li property="cv:eduDescription" key={eduEntry["@id"] + index}>
                                           {eduDescription}
                                       </li>
                                       )}
@@ -167,7 +167,7 @@ export default function Home() {
                   <div style={{display: "flex", alignItems: "center", flexDirection: "row",flexWrap: "wrap",gap: "10px"}}>
                       {skills.map((skill => {
                           return (
-                              <div typeof="cv:Skill">
+                              <div typeof="cv:Skill" key={skill["@id"]}>
                                   <a href={skill.link}>
                                     <img src={skill.image} alt="" height="32" width="32" className="skill"/>
                                     <span property="schema:name">
@@ -188,7 +188,7 @@ export default function Home() {
                       <button id="left" onClick={() => doScroll(-1)}>&lt;</button>
                       <div id="projectWindow">
                           {[...projects, ...projects, ...projects].map((project, index) =>
-                              <div typeof="schema:Project" id={"project"+index} className={index >=projects.length && "hidden"}>
+                              <div typeof="schema:Project" id={"project"+index} className={index >=projects.length && "hidden"} key={project["@id"]+index}>
                                   <h4 property="schema:name">
                                       {project.link.match("github") && <img src="/github-mark.svg" alt=""/>}
                                       {project.link.match("gitlab") && <img src="/gitlab-logo.svg" alt=""/>}
@@ -198,12 +198,12 @@ export default function Home() {
                                   </h4>
                                   <div>
                                       <ul>
-                                          {project.description?.map(description =>
-                                          <li property="schema:description">
+                                          {project.description?.map((description, index) =>
+                                          <li property="schema:description" key={project["@id"] + "des" +index}>
                                               {description}
                                           </li>)}
-                                          {project.publications?.map(publication =>
-                                          <li property="schema:workFeatured">
+                                          {project.publications?.map((publication, index) =>
+                                          <li property="schema:workFeatured" key={project["@id"] + "wrk" +index}>
                                             <h4 style={{display:"inline"}}>
                                               <a href={publication?.link}>
                                                   {publication?.name}
@@ -226,7 +226,7 @@ export default function Home() {
                   </h3>
                   {workHistory.map((job => {
                       return (
-                          <div typeof="cv:WorkHistory" style={{paddingLeft:"8px", paddingRight:"8px"}}>
+                          <div typeof="cv:WorkHistory" style={{paddingLeft:"8px", paddingRight:"8px"}} key={job["@id"]}>
                               <h4 property="cv:jobDescription">
                                   <a href={job.link}>
                                   {job.name}
