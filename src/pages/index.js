@@ -15,6 +15,9 @@ export default function Home() {
     const [workHistory, setWorkHistory] = useState([]);
     const [page, setPage] = useState("");
 
+    const basePath = nextConfig.basePath || "";
+    // const basePath = "";
+
     useEffect(() => {
         const fetchGraph = async () => {
             const basePath = nextConfig.basePath || "";
@@ -196,8 +199,8 @@ export default function Home() {
                           {[...projects, ...projects, ...projects].map((project, index) =>
                               <div typeof="schema:Project" id={"project"+index} className={index >=projects.length && "hidden"} key={project["@id"]+index}>
                                   <h4 property="schema:name">
-                                      {project.link.match("github") && <img src="/github-mark.svg" alt=""/>}
-                                      {project.link.match("gitlab") && <img src="/gitlab-logo.svg" alt=""/>}
+                                      {project.link.match("github") && <img src={basePath+ "/github-mark.svg"} alt=""/>}
+                                      {project.link.match("gitlab") && <img src={basePath + "/gitlab-logo.svg"} alt=""/>}
                                       <a href={project.link}>
                                         {project.name}
                                       </a>
