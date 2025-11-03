@@ -39,7 +39,7 @@
 <https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> a schema:SoftwareSourceCode, schema:Project ;
     schema:codeRepository <https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> ;
     schema:name "Ontology metrics" ;
-    schema:abstract "Nástroj k výpočtu metrik sémantických modelů webových ontologií" , "Projekt k bakalářské práci" ;
+    schema:abstract "Webová služba k výpočtu metrik pro evaluaci webových ontologií" , "Výzkumný a vývojový projekt v rámci bakalářské práce." ;
     schema:workFeatured [ a schema:Article;
                           schema:name "SemDev 2025";
                           schema:url <https://openreview.net/forum?id=7IsSW2mP6o&referrer=%5Bthe%20profile%20of%20Petr%20K%C5%99emen%5D(%2Fprofile%3Fid%3D~Petr_K%C5%99emen1)>
@@ -53,12 +53,12 @@
 <https://github.com/skrisjak/crew-planner> a schema:SoftwareSourceCode, schema:Project ;
     schema:codeRepository <https://github.com/skrisjak/crew-planner>;
     schema:name "Crew Planner" ;
-    schema:abstract "Sdílený kalendář založený na Google OAuth pro plánování směn" .
+    schema:abstract "React.js s Material-UI, back-end v Java Spring Boot, Google OAuth autentizace, Web Push notifikace","Webová aplikace pro plánování směn týmů s přehledným kalendářem" .
 
-<https://github.com/tobias-le/hr-app> a schema:SoftwareSourceCode, schema:Project ;
+<https://github.com/tobias-le/hr-app-frontend> a schema:SoftwareSourceCode, schema:Project ;
     schema:codeRepository <https://github.com/tobias-le/hr-app> ;
-                                      schema:name "HR App" ;
-                                      schema:abstract "Skupinový projekt v rámci předmětu Project Management - práce na FE i BE" .
+                                      schema:name "Timely" ;
+                                      schema:abstract "Použité technologie: Java SpringBoot, React TS", "Práce převážně na FE, code review a bug-fixing na BE","Nástroj pro HR, správu projektů a sledování odpracovaných hodin zaměstnanců" .
 
 
 #<https://www.gymceska.cz/> a schema:HighSchool, cv:Education ;
@@ -67,8 +67,8 @@
 #                          cv:eduDescription "osmileté všeobecné gymnázium" .
 
 <https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> a schema:EducationalOrganization, cv:Education ;
-    schema:name "Softwarové inženýrství a technologie na fakultě elektrotechnické v Praze";
-                                                                                                                       cv:eduDescription "během studia absolvované předměty jako: algoritmizace, tvorba webových aplikací, databázové systémy, notace UML a BPMN, objektový návrh a modelování, návrh softwarových systémů, distribuované systémy a výpočty", "bakalářské studium se specializací Enterprise systémy" ;
+    schema:name "ČVUT FEL – Softwarové inženýrství a technologie";
+                                                                                                                       cv:eduDescription "Zaměření: webové aplikace, databáze, modelování softwaru (UML, BPMN) a distribuované systémy", "Bakalářské studium zaměřené na návrh a vývoj enterprise systémů" ;
                                                                                                                        schema:parentOrganization <https://cvut.cz/> ;
                                                                                                                        cv:startDate "9/2022" ;
                                                                                                                        cv:endDate "6/2025" .
@@ -81,7 +81,7 @@
       schema:name "BeachPark CB" ;
       cv:startDate "7/2019" ;
       cv:endDate "9/2025" ;
-      cv:jobDescription "Sezonní práce jako obsluha baru/pizzerie, vedoucí směny" .
+      cv:jobDescription "Na starosti provoz pizzerie, zásobování","Sezonní práce jako obsluha baru a pizzerie, později vedoucí směny" .
 
 <https://www.java.com/en/> a schema:ComputerLanguage, cv:Skill ;
        schema:name "Java";

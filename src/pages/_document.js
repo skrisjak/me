@@ -11,6 +11,7 @@ export default function Document() {
                 href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nova+Mono&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
                 rel="stylesheet"/>
             <Script src="https://kit.fontawesome.com/84d62f90ab.js" crossOrigin="anonymous" />
+            <meta name="theme-color" content="##002c45"/>
         </Head>
         <body className="antialiased">
         <Main/>

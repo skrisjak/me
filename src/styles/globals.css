@@ -241,6 +241,7 @@ h6 {
     main > :nth-child(1) {
         align-self: stretch;
         margin-right: 10px;
+        min-width: 280px;
     }
 
     main > :not(:nth-child(1)) {

@@ -23,13 +23,13 @@
                                 {job.endDate}
                             </span>
                         </h6>
-                        {job.description &&
-                            <ul>
+                        <ul>
+                        {job.description.map(description =>
                                 <li property="cv:eduDescription">
-                                    {job.description}
-                                </li>
-                            </ul>
+                                    {description}
+                                </li>)
                         }
+                        </ul>
                     </div>
                 )
             }))}
