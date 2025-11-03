@@ -69,7 +69,9 @@
 <https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> a schema:EducationalOrganization, cv:Education ;
     schema:name "Softwarové inženýrství a technologie na fakultě elektrotechnické v Praze";
                                                                                                                        cv:eduDescription "během studia absolvované předměty jako: algoritmizace, tvorba webových aplikací, databázové systémy, notace UML a BPMN, objektový návrh a modelování, návrh softwarových systémů, distribuované systémy a výpočty", "bakalářské studium se specializací Enterprise systémy" ;
-    schema:parentOrganization <https://cvut.cz/> .
+                                                                                                                       schema:parentOrganization <https://cvut.cz/> ;
+                                                                                                                       cv:startDate "9/2022" ;
+                                                                                                                       cv:endDate "6/2025" .
 
 <https://www.cvut.cz/> a schema:CollegeOrUniversity ;
     schema:name "ČVUT";
@@ -77,6 +79,8 @@
 
 <https://www.beachparkcb.cz/> a cv:CV_Entry, cv:WorkHistory ;
       schema:name "BeachPark CB" ;
+      cv:startDate "7/2019" ;
+      cv:endDate "9/2025" ;
       cv:jobDescription "Sezonní práce jako obsluha baru/pizzerie, vedoucí směny" .
 
 <https://www.java.com/en/> a schema:ComputerLanguage, cv:Skill ;

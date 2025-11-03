@@ -90,6 +90,8 @@
         {
             "@id": "https://www.beachparkcb.cz/",
             "http://rdfs.org/resume-rdf/#term_jobDescription": "Sezonní práce jako obsluha baru/pizzerie, vedoucí směny",
+            "http://rdfs.org/resume-rdf/#term_endDate": "9/2025",
+            "http://rdfs.org/resume-rdf/#term_startDate": "7/2019",
             "schema:name": "BeachPark CB",
             "@type": [
                 "http://rdfs.org/resume-rdf/#term_WorkHistory",
@@ -104,6 +106,8 @@
         },
         {
             "@id": "https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium",
+            "http://rdfs.org/resume-rdf/#term_endDate": "6/2025",
+            "http://rdfs.org/resume-rdf/#term_startDate": "9/2022",
             "schema:parentOrganization": {
                 "@id": "https://cvut.cz/"
             },
