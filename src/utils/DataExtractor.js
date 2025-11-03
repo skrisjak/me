@@ -28,6 +28,8 @@ const getEducation = async (data) => {
                 "@id": "http://rdfs.org/resume-rdf/#term_eduDescription",
                 "@container": "@set"
             },
+            startDate: "http://rdfs.org/resume-rdf/#term_startDate",
+            endDate: "http://rdfs.org/resume-rdf/#term_endDate",
             link: "@id"
         }
     };
@@ -70,6 +72,8 @@ const getWorkHistory = async (data) => {
                 "@id": "http://rdfs.org/resume-rdf/#term_jobDescription",
                 "@container": "@set"
             },
+            startDate: "http://rdfs.org/resume-rdf/#term_startDate",
+            endDate: "http://rdfs.org/resume-rdf/#term_endDate",
             link: "@id"
         }
     };
