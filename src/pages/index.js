@@ -55,9 +55,8 @@ export default function Home() {
                   <Stack skills={skills}/>
 
                   <Projects projects={projects}/>
-                  <Jobs workHistory={workHistory}/>
+              {/* <Jobs workHistory={workHistory}/> */}
               </div>
-
           </main>
   );
 }
