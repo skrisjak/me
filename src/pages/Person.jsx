@@ -6,7 +6,7 @@ const Person = (props) => {
     return (
         <section typeof="foaf:Person schema:Person">
             <div className="profileImage">
-                <img src={bio? bio.image : (nextConfig.basePath || "" +"/profileImage.png") } alt="Profile image" onError={(e) => {e.target.src=(nextCongig.basePath || "") + '/profileImage.png'; e.target.onerror=null}} property="foaf:img"/>
+                <img src={bio? bio.image : (nextConfig.basePath || "" +"/profileImage.png") } alt="Profile image" onError={(e) => {e.target.src=(nextConfig.basePath || "") + '/profileImage.png'; e.target.onerror=null}} property="foaf:img"/>
             </div>
             <div style={{padding:"10px"}}>
                 <h2>
