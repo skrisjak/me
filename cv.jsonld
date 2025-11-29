@@ -7,7 +7,7 @@
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Docker",
             "schema:name": "Docker",
-            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
         },
         {
             "@id": "https://www.elastic.co/",
@@ -16,7 +16,7 @@
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Elastic",
             "schema:name": "Elastic",
-            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
         },
         {
             "@id": "https://www.postgresql.org/",
@@ -76,7 +76,7 @@
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Material UI",
             "schema:name": "Material UI",
-            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
         },
         {
             "@id": "https://react.dev/",
