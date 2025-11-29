@@ -98,6 +98,11 @@
         cv:skillName "React JS" ;
         schema:image <https://banner2.cleanpng.com/20180604/pol/aa9o0qy6e.webp> .
 
+<https://mui.com/> a cv:SKill;
+    schema:name "Material UI" ;
+    cv:skillName "Material UI" ;
+    schema:image <https://w7.pngwing.com/pngs/761/513/png-transparent-material-ui-logo.png> .
+
 <https://git-scm.com/> a cv:Skill ;
       schema:name "Git" ;
       cv:skillName "Git" ;
@@ -122,3 +127,13 @@
     schema:name "PostgreSQL" ;
     cv:skillName "PostgreSQL" ;
     schema:image <https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp> .
+
+<https://www.elastic.co/> a cv:SKill ;
+    schema:name "Elastic" ;
+    cv:skillName "Elastic" ;
+    schema:image <https://cdn.optimizely.com/img/18132920325/bb267dd0fde04a47bf59cb3989c9512b.png> .
+
+<https://www.docker.com/> a cv:SKill ;
+    schema:name "Docker" ;
+    cv:skillName "Docker" ;
+    schema:image <https://www.docker.com/app/uploads/2023/08/logo-guide-logos-2.svg> .

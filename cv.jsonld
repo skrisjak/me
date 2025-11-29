@@ -1,6 +1,24 @@
 {
     "@graph": [
         {
+            "@id": "https://www.docker.com/",
+            "schema:image": {
+                "@id": "https://www.docker.com/app/uploads/2023/08/logo-guide-logos-2.svg"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Docker",
+            "schema:name": "Docker",
+            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
+        },
+        {
+            "@id": "https://www.elastic.co/",
+            "schema:image": {
+                "@id": "https://cdn.optimizely.com/img/18132920325/bb267dd0fde04a47bf59cb3989c9512b.png"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Elastic",
+            "schema:name": "Elastic",
+            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
+        },
+        {
             "@id": "https://www.postgresql.org/",
             "schema:image": {
                 "@id": "https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp"
@@ -50,6 +68,15 @@
             "http://rdfs.org/resume-rdf/#term_skillName": "Git",
             "schema:name": "Git",
             "@type": "http://rdfs.org/resume-rdf/#term_Skill"
+        },
+        {
+            "@id": "https://mui.com/",
+            "schema:image": {
+                "@id": "https://w7.pngwing.com/pngs/761/513/png-transparent-material-ui-logo.png"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Material UI",
+            "schema:name": "Material UI",
+            "@type": "http://rdfs.org/resume-rdf/#term_SKill"
         },
         {
             "@id": "https://react.dev/",
