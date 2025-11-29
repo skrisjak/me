@@ -1,7 +1,14 @@
 import nextConfig from "../../next.config.mjs";
+import {useEffect} from "react";
 
 const Person = (props) => {
     const bio = props.bio;
+
+    useEffect(() => {
+        if (bio) {
+            document.title = bio.firstName + " " + bio.familyName;
+        }
+    }, [bio]);
 
     return (
         <section typeof="foaf:Person schema:Person">
