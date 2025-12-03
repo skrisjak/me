@@ -91,6 +91,15 @@
             ]
         },
         {
+            "@id": "https://kafka.apache.org/",
+            "schema:image": {
+                "@id": "https://e7.pngegg.com/pngimages/929/893/png-clipart-apache-kafka-apache-cassandra-logo-apache-http-server-apache-hadoop-beijing-text-logo.png"
+            },
+            "http://rdfs.org/resume-rdf/#term_skillName": "Kafka",
+            "schema:name": "Kafka",
+            "@type": "http://rdfs.org/resume-rdf/#term_Skill"
+        },
+        {
             "@id": "https://spring.io/",
             "schema:image": {
                 "@id": "https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp"
