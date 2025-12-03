@@ -1,14 +1,12 @@
 import {useEffect, useState} from "react";
+import "@af-utils/scrollend-polyfill";
 import {getBio, getEducation, getProjects, getTechnologies, getWorkHistory} from "@/utils/DataExtractor";
-import getConfig from "next/config";
 import nextConfig from "../../next.config.mjs";
 import Person from "@/pages/Person";
 import Education from "@/pages/Education";
 import Stack from "@/pages/Stack";
 import Projects from "@/pages/Projects";
 import Jobs from "@/pages/Jobs";
-
-const { publicRuntimeConfig } = getConfig();
 
 export default function Home() {
     const [graph, setGraph] = useState(null);
@@ -24,8 +22,6 @@ export default function Home() {
 
     useEffect(() => {
         const fetchGraph = async () => {
-            const basePath = nextConfig.basePath || "";
-            // const basePath = "";
             fetch(basePath + "/cv.jsonld").then(res => res.json()).then((json) => {setGraph(json)});
         }
         fetchGraph();

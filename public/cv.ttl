@@ -93,6 +93,11 @@
              cv:skillName "Spring" ;
              schema:image <https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp> .
 
+<https://kafka.apache.org/> a cv:Skill ;
+                            schema:name "Kafka" ;
+                            cv:skillName "Kafka" ;
+                            schema:image <https://e7.pngegg.com/pngimages/929/893/png-clipart-apache-kafka-apache-cassandra-logo-apache-http-server-apache-hadoop-beijing-text-logo.png> .
+
 <https://react.dev/> a schema:ComputerLanguage, cv:Skill;
         schema:name "React JS" ;
         cv:skillName "React JS" ;

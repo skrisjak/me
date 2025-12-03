@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@af-utils/scrollend-polyfill": "^0.0.14",
     "jsonld": "^8.3.3",
     "next": "15.5.3",
     "react": "19.1.0",
