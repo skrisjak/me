@@ -109,7 +109,7 @@ const Projects = (props) => {
                         </div>
                     )}
                 </div>
-                {projects.length > 1 &&
+                {projects && projects.length > 1 &&
                     <div id="pagination">
                         <div id="pages">
                         {projects.map((project, index) =>
