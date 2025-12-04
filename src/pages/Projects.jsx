@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import nextConfig from "../../next.config.mjs";
 
 const Projects = (props) => {
@@ -6,7 +6,7 @@ const Projects = (props) => {
     const basePath = nextConfig.basePath || "";
     // const basePath = "";
 
-    const [page, setPage] = useState("");
+    const [page, setPage] = useState(0);
 
 
     useEffect(() => {
@@ -22,7 +22,8 @@ const Projects = (props) => {
                     } else if (index > projects.length*2) {
                         container.children[index - projects.length].scrollIntoView({behavior:"instant"});
                     }
-                    setPage( ((index % projects.length) +1) +"/" + projects.length);
+                    //setPage(index);
+                    setPage( ((index % projects.length)));
                 }
 
                 container.addEventListener("scrollend", scrollHandler);
@@ -51,20 +52,27 @@ const Projects = (props) => {
                 container.children[index].scrollIntoView({behavior:"instant"});
             }
             container.children[index + way].scrollIntoView({behavior: "smooth"});
-            setPage( ((index % projects.length) +1) +"/" + projects.length);
+            setPage( ((index % projects.length)));
 
         }
     }
 
+    const prevPage = useRef(page);
+
     useEffect(() => {
-        const pagi = document.getElementById("pagination");
-        if (pagi) {
-            pagi.classList.toggle("active", true);
-            setTimeout(() => {
-                pagi.classList.toggle("active", false);
-            }, 2000);
+        document.getElementById("page"+prevPage.current)?.classList.remove("current");
+        if (projects.length > 4) {
+            const move = (page - prevPage.current);
+
+            document.getElementById("pages")?.animate([
+                    {transform: `translate(${move}rem,0)`}, {transform: "translate(0,0)"}],
+                {duration: 300, easing: "ease-in-out"},
+            );
         }
-    }, [page])
+        document.getElementById("page"+page)?.classList.add("current");
+        document.getElementById("page"+page)?.scrollIntoView({behavior:"smooth"});
+        prevPage.current = page;
+    }, [page]);
 
     return (
         <section>
@@ -72,9 +80,8 @@ const Projects = (props) => {
                 Projekty
             </h3>
             <div id="projectsContainer">
-                <button id="left" onClick={() => doScroll(-1)}>&lt;</button>
                 <div id="projectWindow">
-                    {projects && [...projects, ...projects, ...projects].map((project, index) =>
+                    {projects && (projects.length > 1 ? [...projects, ...projects, ...projects] : projects).map((project, index) =>
                         <div typeof="schema:Project" id={"project"+index} className={index >=projects.length && "hidden"} key={project["@id"]+index}>
                             <h4 property="schema:name">
                                 {project.link.match("github") && <img src={basePath+ "/github-mark.svg"} alt=""/>}
@@ -102,8 +109,15 @@ const Projects = (props) => {
                         </div>
                     )}
                 </div>
-                <button id="right" onClick={() => doScroll(1)}>&gt;</button>
-                <span id="pagination">{page}</span>
+                {projects.length > 1 &&
+                    <div id="pagination">
+                        <div id="pages">
+                        {projects.map((project, index) =>
+                            <div className={"page" + (index===0? " current" : "")} id={"page"+index}></div>
+                        )}
+                        </div>
+                    </div>
+                }
             </div>
         </section>
     )
