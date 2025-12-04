@@ -7,6 +7,7 @@ export default function Document() {
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+            <link rel="manifest" href="/manifest.json" />
             <link
                 href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nova+Mono&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
                 rel="stylesheet"/>
