@@ -1,13 +1,15 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import nextConfig from "../../next.config.mjs";
 
 export default function Document() {
+  const basePath = nextConfig.basePath || "";
   return (
     <Html lang="en">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-            <link rel="manifest" href="/manifest.json" />
+            <link rel="manifest" href={basePath+"/manifest.json"} />
             <link
                 href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nova+Mono&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
                 rel="stylesheet"/>
