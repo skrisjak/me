@@ -36,6 +36,11 @@
            #<https://www.gymceska.cz/>,
            <https://fel.cvut.cz/cs/studijni-programy/sit-softwarove-inzenyrstvi-a-technologie/zajem-o-studium/bakalarske-studium> .
 
+_:01 a cv:LanguageSkill;
+     cv:lngSkillLevelReading "B2" ;
+     cv:skillName "EN" ;
+     schema:image "🇬🇧" .
+
 <https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> a schema:SoftwareSourceCode, schema:Project ;
     schema:codeRepository <https://gitlab.fel.cvut.cz/skrisjak/obo-ontologies-metrics> ;
     schema:name "Ontology metrics" ;
@@ -86,37 +91,37 @@
 <https://www.java.com/en/> a schema:ComputerLanguage, cv:Skill ;
        schema:name "Java";
        cv:skillName "Java" ;
-       schema:image <https://banner2.cleanpng.com/20180502/ksq/avdsf7rin.webp>.
+       schema:image <https://img.icons8.com/?size=100&id=13679&format=png&color=000000>.
 
 <https://spring.io/> a schema:ComputerLanguage, cv:Skill ;
              schema:name "Spring" ;
              cv:skillName "Spring" ;
-             schema:image <https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp> .
+             schema:image <https://img.icons8.com/?size=100&id=90519&format=png&color=000000> .
 
 <https://kafka.apache.org/> a cv:Skill ;
                             schema:name "Kafka" ;
                             cv:skillName "Kafka" ;
-                            schema:image <https://e7.pngegg.com/pngimages/929/893/png-clipart-apache-kafka-apache-cassandra-logo-apache-http-server-apache-hadoop-beijing-text-logo.png> .
+                            schema:image <https://img.icons8.com/?size=100&id=GcoBILXGLwFD&format=png&color=000000> .
 
 <https://react.dev/> a schema:ComputerLanguage, cv:Skill;
         schema:name "React JS" ;
         cv:skillName "React JS" ;
-        schema:image <https://banner2.cleanpng.com/20180604/pol/aa9o0qy6e.webp> .
+        schema:image <https://img.icons8.com/?size=100&id=123603&format=png&color=000000> .
 
 <https://mui.com/> a cv:Skill;
     schema:name "Material UI" ;
     cv:skillName "Material UI" ;
-    schema:image <https://w7.pngwing.com/pngs/761/513/png-transparent-material-ui-logo.png> .
+    schema:image <https://img.icons8.com/?size=100&id=gFw7X5Tbl3ss&format=png&color=000000> .
 
 <https://git-scm.com/> a cv:Skill ;
       schema:name "Git" ;
       cv:skillName "Git" ;
-      schema:image <https://banner2.cleanpng.com/20180824/xrj/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-1713949426611.webp> .
+      schema:image <https://img.icons8.com/?size=100&id=20906&format=png&color=000000> .
 
 <https://www.linux.org/> a cv:Skill;
         schema:name "Síťové služby v Linux" ;
         cv:skillName "Síťové služby v Linux" ;
-        schema:image <https://banner2.cleanpng.com/20240217/alw/transparent-linux-logo-black-penguin-standing-with-open-beak-1710875197183.webp> .
+        schema:image <https://img.icons8.com/?size=100&id=tmEqIUErLJVM&format=png&color=000000> .
 
 <https://www.w3.org/RDF/> a schema:ComputerLanguage, cv:Skill ;
        schema:name "Semantic Web" ;
@@ -131,14 +136,14 @@
 <https://www.postgresql.org/> a cv:Skill ;
     schema:name "PostgreSQL" ;
     cv:skillName "PostgreSQL" ;
-    schema:image <https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp> .
+    schema:image <https://img.icons8.com/?size=100&id=Pv4IGT0TSpt8&format=png&color=000000> .
 
 <https://www.elastic.co/> a cv:Skill ;
     schema:name "Elastic" ;
     cv:skillName "Elastic" ;
-    schema:image <https://cdn.optimizely.com/img/18132920325/bb267dd0fde04a47bf59cb3989c9512b.png> .
+    schema:image <https://img.icons8.com/?size=100&id=dYeOB8XFgV0C&format=png&color=000000> .
 
 <https://www.docker.com/> a cv:Skill ;
     schema:name "Docker" ;
     cv:skillName "Docker" ;
-    schema:image <https://www.docker.com/app/uploads/2023/08/logo-guide-logos-2.svg> .
+    schema:image <https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000> .

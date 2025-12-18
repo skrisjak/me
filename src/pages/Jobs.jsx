@@ -10,7 +10,7 @@
                 return (
                     <div typeof="cv:WorkHistory" style={{paddingLeft:"8px", paddingRight:"8px"}} key={job["@id"]}>
                         <h4 property="cv:jobDescription">
-                            <a href={job.link}>
+                            <a href={job.link} target="_blank" rel="noopener noreferrer">
                                 {job.name}
                             </a>
                         </h4>

@@ -329,4 +329,18 @@ h6 {
         padding: 0;
     }
 
+    .link::after {
+        content: "";
+        display: inline-block;
+        width: 0.8em;
+        height: 0.8em;
+        margin-left: 0.25em;
+
+        background-image: url("https://img.icons8.com/?size=100&id=60664&format=png&color=000000");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        vertical-align: super;
+    }
+
 }

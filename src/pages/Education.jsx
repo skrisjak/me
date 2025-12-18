@@ -12,7 +12,7 @@ const Education = (props) => {
                 return (
                     <div typeof="cv:Education" style={{paddingLeft:"8px", paddingRight:"8px"}} key={eduEntry["@id"]}>
                         <h4 property="schema:name">
-                            <a href={eduEntry.link}>
+                            <a href={eduEntry.link} target="_blank" rel="noopener noreferrer">
                                 {eduEntry.name}
                             </a>
                         </h4>

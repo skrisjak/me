@@ -14,6 +14,16 @@ const getBio = async (data) => {
     });
 }
 
+const getLanguages = async (data) => {
+    const graph = await jsonld.flatten(data);
+    const languages = graph.find(obj => obj["@type"].includes("http://resume-rdf/#term_LanguageSkill"));
+    return await jsonld.compact(languages, {
+        name: "http://resume-rdf/#term_skillName",
+        level: "http://resume-rdf/#term_lngSkillLevelReading",
+        image: "https://schema.org/image",
+    })
+}
+
 const getEducation = async (data) => {
     const graph = await jsonld.flatten(data);
 

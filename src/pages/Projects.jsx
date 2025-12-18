@@ -4,7 +4,6 @@ import nextConfig from "../../next.config.mjs";
 const Projects = (props) => {
     const projects = props.projects;
     const basePath = nextConfig.basePath || "";
-    // const basePath = "";
 
     const [page, setPage] = useState(0);
 
@@ -22,7 +21,6 @@ const Projects = (props) => {
                     } else if (index > projects.length*2) {
                         container.children[index - projects.length].scrollIntoView({behavior:"instant"});
                     }
-                    //setPage(index);
                     setPage( ((index % projects.length)));
                 }
 
@@ -86,7 +84,7 @@ const Projects = (props) => {
                             <h4 property="schema:name">
                                 {project.link.match("github") && <img src={basePath+ "/github-mark.svg"} alt=""/>}
                                 {project.link.match("gitlab") && <img src={basePath + "/gitlab-logo.svg"} alt=""/>}
-                                <a href={project.link}>
+                                <a href={project.link} className="link" target="_blank" rel="noopener noreferrer">
                                     {project.name}
                                 </a>
                             </h4>
@@ -99,7 +97,7 @@ const Projects = (props) => {
                                     {project.publications?.map((publication, index) =>
                                         <li property="schema:workFeatured" key={project["@id"] + "wrk" +index}>
                                             <h4 style={{display:"inline"}}>
-                                                <a href={publication?.link}>
+                                                <a href={publication?.link} className="link" target="_blank" rel="noopener noreferrer">
                                                     {publication?.name}
                                                 </a>
                                             </h4>

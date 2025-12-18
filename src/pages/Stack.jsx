@@ -9,7 +9,7 @@ const Stack = (props) => {
             {skills && skills.map((skill => {
                 return (
                     <div typeof="cv:Skill" key={skill["@id"]}>
-                        <a href={skill.link}>
+                        <a href={skill.link} target="_blank" rel="noopener noreferrer">
                             <img src={skill.image} alt="" height="32" width="32" className="skill"/>
                             <span property="schema:name">
                                         {" " + skill.name}
