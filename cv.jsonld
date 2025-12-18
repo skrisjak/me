@@ -3,7 +3,7 @@
         {
             "@id": "https://www.docker.com/",
             "schema:image": {
-                "@id": "https://www.docker.com/app/uploads/2023/08/logo-guide-logos-2.svg"
+                "@id": "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Docker",
             "schema:name": "Docker",
@@ -12,7 +12,7 @@
         {
             "@id": "https://www.elastic.co/",
             "schema:image": {
-                "@id": "https://cdn.optimizely.com/img/18132920325/bb267dd0fde04a47bf59cb3989c9512b.png"
+                "@id": "https://img.icons8.com/?size=100&id=dYeOB8XFgV0C&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Elastic",
             "schema:name": "Elastic",
@@ -21,7 +21,7 @@
         {
             "@id": "https://www.postgresql.org/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/20180804/usa/4a4392396e675f74f98c836a446991ec.webp"
+                "@id": "https://img.icons8.com/?size=100&id=Pv4IGT0TSpt8&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "PostgreSQL",
             "schema:name": "PostgreSQL",
@@ -54,7 +54,7 @@
         {
             "@id": "https://www.linux.org/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/20240217/alw/transparent-linux-logo-black-penguin-standing-with-open-beak-1710875197183.webp"
+                "@id": "https://img.icons8.com/?size=100&id=tmEqIUErLJVM&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Síťové služby v Linux",
             "schema:name": "Síťové služby v Linux",
@@ -63,7 +63,7 @@
         {
             "@id": "https://git-scm.com/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/20180824/xrj/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-1713949426611.webp"
+                "@id": "https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Git",
             "schema:name": "Git",
@@ -72,7 +72,7 @@
         {
             "@id": "https://mui.com/",
             "schema:image": {
-                "@id": "https://w7.pngwing.com/pngs/761/513/png-transparent-material-ui-logo.png"
+                "@id": "https://img.icons8.com/?size=100&id=gFw7X5Tbl3ss&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Material UI",
             "schema:name": "Material UI",
@@ -81,7 +81,7 @@
         {
             "@id": "https://react.dev/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/20180604/pol/aa9o0qy6e.webp"
+                "@id": "https://img.icons8.com/?size=100&id=123603&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "React JS",
             "schema:name": "React JS",
@@ -93,7 +93,7 @@
         {
             "@id": "https://kafka.apache.org/",
             "schema:image": {
-                "@id": "https://e7.pngegg.com/pngimages/929/893/png-clipart-apache-kafka-apache-cassandra-logo-apache-http-server-apache-hadoop-beijing-text-logo.png"
+                "@id": "https://img.icons8.com/?size=100&id=GcoBILXGLwFD&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Kafka",
             "schema:name": "Kafka",
@@ -102,7 +102,7 @@
         {
             "@id": "https://spring.io/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/lnd/20241228/og/7bf660c08c2481549523d8dad45bcd.webp"
+                "@id": "https://img.icons8.com/?size=100&id=90519&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Spring",
             "schema:name": "Spring",
@@ -114,7 +114,7 @@
         {
             "@id": "https://www.java.com/en/",
             "schema:image": {
-                "@id": "https://banner2.cleanpng.com/20180502/ksq/avdsf7rin.webp"
+                "@id": "https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
             },
             "http://rdfs.org/resume-rdf/#term_skillName": "Java",
             "schema:name": "Java",
@@ -229,6 +229,13 @@
                 "schema:Project",
                 "schema:SoftwareSourceCode"
             ]
+        },
+        {
+            "@id": "_:b2",
+            "schema:image": "🇬🇧",
+            "http://rdfs.org/resume-rdf/#term_skillName": "EN",
+            "http://rdfs.org/resume-rdf/#term_lngSkillLevelReading": "B2",
+            "@type": "http://rdfs.org/resume-rdf/#term_LanguageSkill"
         },
         {
             "@id": "http://skrisjak./",
